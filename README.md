@@ -1,4 +1,4 @@
-echo "# CodeAlpha Student Grade Tracker
+## CodeAlpha Student Grade Tracker
 
 A console-based Java program to manage student grades.
 Built as Task 1 for CodeAlpha Java Programming Internship.
