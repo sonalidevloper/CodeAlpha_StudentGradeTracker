@@ -14,6 +14,7 @@ A console-based Java program to manage student grades. Built as Task 1 for the C
 - [Project structure](#project-structure)
 - [Development Notes](#development-notes)
 - [Contributing](#contributing)
+- [Contact](#contact)
 
 ## About
 
@@ -139,5 +140,8 @@ Contributions, bug reports and improvements are welcome. To contribute:
 - Create a feature branch
 - Open a pull request describing your change
 If you want help writing tests or expanding features (CLI options, CSV import/export, GUI), open an issue describing your plan.
+
+## Contact
+Maintained by sonalidevloper — find the repository at: https://github.com/sonalidevloper/CodeAlpha_StudentGradeTracker
 
 
