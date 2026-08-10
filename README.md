@@ -12,8 +12,8 @@ A console-based Java program to manage student grades. Built as Task 1 for the C
 - [Build & run](#build--run)
 - [Usage example](#usage-example)
 - [Project structure](#project-structure)
+- [Development Notes](#development-notes)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
@@ -53,13 +53,38 @@ From the project root you can build and run in several ways:
 # compile
 mvn compile
 
-## Usage example
 When you run the program you should see a simple console menu. Example interaction: 
 
 
 # run with maven exec (replace the main class if different)
 mvn exec:java -Dexec.mainClass="com.yourpackage.Main"
 
+
+```
+
+
+2) Build a jar and run (if the project is configured to produce an executable jar):
+
+```bash
+# package the app
+mvn package
+
+# run the jar (replace the jar name with the produced artifact)
+java -jar target/CodeAlpha_StudentGradeTracker-1.0-SNAPSHOT.jar
+
+```
+
+3) Run from your IDE (IntelliJ):
+- Open the project in IntelliJ
+- Build the project or run the Main class that contains the public static void main(String[] args) entry point
+
+Notes:
+
+- If the project uses a different main class or artifactId, replace the example names above with the actual values from your pom.xml.
+- If mvn exec:java fails, either configure the exec plugin in pom.xml or run the compiled class directly with java -cp target/classes fully.qualified.Main.
+
+## Usage example
+When you run the program you should see a simple console menu. Example interaction:
 Welcome to CodeAlpha Student Grade Tracker
 1) Add student
 2) Add grade for student
@@ -81,3 +106,38 @@ Report for Alice:
 - Highest: 92
 - Lowest: 92
 - Letter grade: A
+
+## Project structure
+A typical layout (your package names and folders may differ):
+
+.
+├── pom.xml
+├── README.md
+└── src
+    ├── main
+    │   └── java
+    │       └── com/yourcompany/gradetracker
+    │           ├── Main.java
+    │           ├── Student.java
+    │           └── GradeManager.java
+    └── test
+        └── java
+
+## Development Notes
+- pom.xml currently sets source/target Java to 23.
+- Replace placeholder main class used in examples with the actual fully-qualified class name from your code.
+- Recommended improvements:
+  1. Add unit tests (JUnit 5)
+  2. Add GitHub Actions CI to run mvn package on pushes/PRs
+  3. Add CSV import/export and optional persistence
+
+
+## Contributing
+Contributions, bug reports and improvements are welcome. To contribute:
+
+- Fork the repo
+- Create a feature branch
+- Open a pull request describing your change
+If you want help writing tests or expanding features (CLI options, CSV import/export, GUI), open an issue describing your plan.
+
+
