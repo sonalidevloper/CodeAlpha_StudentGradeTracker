@@ -53,5 +53,31 @@ From the project root you can build and run in several ways:
 # compile
 mvn compile
 
+## Usage example
+When you run the program you should see a simple console menu. Example interaction: 
+
+
 # run with maven exec (replace the main class if different)
 mvn exec:java -Dexec.mainClass="com.yourpackage.Main"
+
+Welcome to CodeAlpha Student Grade Tracker
+1) Add student
+2) Add grade for student
+3) View report
+4) Exit
+
+Select an option: 1
+Enter student name: Alice
+Student added: Alice
+
+Select an option: 2
+Enter student name: Alice
+Enter grade (0-100): 92
+Grade added for Alice: 92
+
+Select an option: 3
+Report for Alice:
+- Average: 92.0
+- Highest: 92
+- Lowest: 92
+- Letter grade: A
