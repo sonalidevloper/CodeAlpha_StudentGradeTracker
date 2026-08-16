@@ -1,4 +1,5 @@
-## CodeAlpha Student Grade Tracker
+## CodeAlpha Student Grade Tracker 
+
 
 ![Java 23](https://img.shields.io/badge/Java-23-blue?logo=java&logoColor=white) ![Maven](https://img.shields.io/badge/Maven-3.6%2B-brightgreen?logo=apache-maven&logoColor=white) ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ-IDEA-black?logo=jetbrains&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-repo-black?logo=github&logoColor=white) ![Git](https://img.shields.io/badge/Git-version_control-black?logo=git&logoColor=white)
 
